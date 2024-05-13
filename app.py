@@ -8,7 +8,7 @@ def load_data(csv):
 
 
 def download_data():
-    return st.session_state.df.to_csv(index=False)
+    return st.session_state.df.to_csv(sep=";", index=False)
 
 
 def next_item(col="text", init=False):
